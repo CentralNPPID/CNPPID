@@ -1,0 +1,63 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>SettingsFile Methods</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">An NDoc Documented Class Library</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">SettingsFile Methods</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p>The methods of the <b>SettingsFile</b> class are listed below. For a complete list of <b>SettingsFile</b> class members, see the <a href="CNPPID.SettingsFileMembers.html">SettingsFile Members</a> topic.</p>
+      <h4 class="dtH4">Public Instance Methods</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="CNPPID.SettingsFile.AddSetting.html">AddSetting</a></td><td width="50%"> Add a setting with key strK and data strD and an optional description of strDesc. Increment intNumSettings. <param name="strK"> strK is the key to use. It must be unique or you will have problems getting the values out later. </param><param name="strD"> strD is the data for the key. </param><param name="strDesc"> strDesc is the description for this item. It is optional. </param><returns><p> Returns True if we were able to add the setting. </p><p> Returns False if not. </p></returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassEqualsTopic.htm">Equals</a> (inherited from <b>Object</b>)</td><td width="50%">Determines whether the specified <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassTopic.htm">Object</a> is equal to the current <b>Object</b>.</td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassGetHashCodeTopic.htm">GetHashCode</a> (inherited from <b>Object</b>)</td><td width="50%">Serves as a hash function for a particular type, suitable for use in hashing algorithms and data structures like a hash table.</td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="CNPPID.SettingsFile.GetSettingByIndex.html">GetSettingByIndex</a></td><td width="50%"> Retrieve the data for the index provided. <param name="intIndex"> intIndex is the index of the internal array. </param><returns><p> Return the data for the element at Settings(intIndex) if intIndex is within the bounds of the array. </p><p> Return vbNullString if intIndex is not within the bounds of the array. </p></returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="CNPPID.SettingsFile.GetSettingByName.html">GetSettingByName</a></td><td width="50%"> Find the setting with the key of strName <param name="strName"> strName is the key to find. </param><returns><p> Return the setting that has the corresponding strKey if one exists. </p><p> Return Nothing if it's not found in the array. </p></returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassGetTypeTopic.htm">GetType</a> (inherited from <b>Object</b>)</td><td width="50%">Gets the <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemTypeClassTopic.htm">Type</a> of the current instance.</td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="CNPPID.SettingsFile.SaveFile.html">SaveFile</a></td><td width="50%"> Save the elements to the file. <returns> Returns True if the file was saved or False if not. </returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassToStringTopic.htm">ToString</a> (inherited from <b>Object</b>)</td><td width="50%">Returns a <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemStringClassTopic.htm">String</a> that represents the current <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassTopic.htm">Object</a>.</td></tr></table>
+      </div>
+      <h4 class="dtH4">Protected Instance Methods</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassFinalizeTopic.htm">Finalize</a> (inherited from <b>Object</b>)</td><td width="50%">Allows an <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassTopic.htm">Object</a> to attempt to free resources and perform other cleanup operations before the <b>Object</b> is reclaimed by garbage collection.</td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassMemberwiseCloneTopic.htm">MemberwiseClone</a> (inherited from <b>Object</b>)</td><td width="50%">Creates a shallow copy of the current <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassTopic.htm">Object</a>.</td></tr></table>
+      </div>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="CNPPID.SettingsFile.html">SettingsFile Class</a> | <a href="CNPPID.html">CNPPID Namespace</a></p>
+      <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e" viewastext="true" style="display: none;">
+        <param name="Keyword" value="SettingsFile class, methods">
+        </param>
+      </object>
+      <hr />
+      <div id="footer">
+        <p>
+          <a href="mailto:wdcampbell@cnppid.com?subject=An%20NDoc%20Documented%20Class%20Library%20Documentation%20Feedback:%20SettingsFile Methods">Send comments on this topic.</a>
+        </p>
+        <p>
+        </p>
+        <p>Generated from assembly CNPPID [1.5.0.0]</p>
+      </div>
+    </div>
+  </body>
+</html>

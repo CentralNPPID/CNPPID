@@ -1,0 +1,111 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>Pop3 Members</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">An NDoc Documented Class Library</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">Pop3 Members
+					</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p>
+        <a href="CNPPID.Pop3.html">Pop3 overview</a>
+      </p>
+      <h4 class="dtH4">Public Instance Constructors</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr VALIGN="top">
+            <td width="50%">
+              <img src="pubmethod.gif" />
+              <a href="CNPPID.Pop3Constructor.html">Pop3 Constructor</a>
+            </td>
+            <td width="50%"> The default constructor for this control. </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="dtH4">Public Instance Properties</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="CNPPID.Pop3.AttachmentDirectory.html">AttachmentDirectory</a></td><td width="50%"> This is the directory where the attachments are stored if SaveAttachments is True. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="CNPPID.Pop3.Cancel.html">Cancel</a></td><td width="50%"> Set this to True if you want the mail control to stop what it's doing. It is reset to False when the control checks mail again. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="CNPPID.Pop3.CurrentState.html">CurrentState</a></td><td width="50%"> What the control is currently doing. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="CNPPID.Pop3.DownloadHeadersOnly.html">DownloadHeadersOnly</a></td><td width="50%"> Set this to True before checking the mail if you only want the headers (From, To, Date), etc. and not the message body or the attachments. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="CNPPID.Pop3.NumMessages.html">NumMessages</a></td><td width="50%"> How many messages the control retrieved from the mail server. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="CNPPID.Pop3.Password.html">Password</a></td><td width="50%"> Set this before checking the mail so the control can log into the server to check the mail. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="CNPPID.Pop3.SaveAttachments.html">SaveAttachments</a></td><td width="50%"> Set this to True if you want the attachments automatically saved to disk. Don't forget to set the AttachmentDirectory attribute as well. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="CNPPID.Pop3.ServerName.html">ServerName</a></td><td width="50%"> The name of the server to connect to and retrieve the emails from. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="CNPPID.Pop3.UserName.html">UserName</a></td><td width="50%"> This is the account name to use when logging into the mail server. </td></tr></table>
+      </div>
+      <h4 class="dtH4">Public Instance Methods</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="CNPPID.Pop3.Connect.html">Connect</a></td><td width="50%"> Try to connect to the mail server with the previously supplied user name and password. You need to define the user name, password and server name before using this function. Blank passwords are allowed but not blank user IDs or server names. NumMessages is set once the connection is made. <returns> Returns True if it was able to connect or False if not. </returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="CNPPID.Pop3.CreateFromText.html">CreateFromText</a></td><td width="50%"> Break apart strMessage into the header and body sections and create a mail message from it. If SaveAttachmentsToDisk is True, the attachments are saved to that directory. <param name="strMessage"> strMessage is the string used as a source. </param><returns> Returns a Pop3Message with all of the data filled in. </returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="CNPPID.Pop3.DecodeBase64.html">DecodeBase64</a></td><td width="50%"> Save an attachment encoded as Base64 to a file on disk. <param name="strMsg"> strMsg is the attachment to decode. </param><param name="strPath"> strPath is the full path, including filename, of the file to use when saving to disk. </param><returns><p> Returns True if we were successfully able to save the attachment. </p><p> Returns False if an error occurred. </p></returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="CNPPID.Pop3.DeleteByGUID.html">DeleteByGUID</a></td><td width="50%"> Delete the message with GUID of strGUID. Goes through the list of messages already downloaded to get the index of the message with the same GUID. This gives us a starting point to start querying the server for the index. Once we find the index, delete it and return True if we succeeeded or False if not. <param name="strGUID"> strGUID is the GUID of the message to delete. </param><returns><p> Returns True if the message is succesfully deleted. </p><p> Returns False if the message is not deleted. </p></returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="CNPPID.Pop3.DeleteMessage.html">DeleteMessage</a></td><td width="50%"> Delete the message with index number msgIndex. NOTE that this is the 1-based index the mail server uses, not the 0-based index that the class uses. Returns True if it was able to delete the message, False if not. This assumes we are already connected to the mail server. <param name="msgIndex"> msgIndex is the index on the mail server. </param><returns><p> Returns True if the message was successfully deleted. </p><p> Returns False if the message was not successfully deleted. </p></returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="CNPPID.Pop3.DownloadMessages.html">DownloadMessages</a></td><td width="50%"> Download the messages from the server and store them in the Messages() array. The user can use the GetMessageByIndex() function to retrieve a particular message from the array. Sets intNumMessages to the proper amount. <returns><p> Returns True if the class is able to retrieve messages. </p><p> False if an error occurs. </p></returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassEqualsTopic.htm">Equals</a> (inherited from <b>Object</b>)</td><td width="50%">Determines whether the specified <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassTopic.htm">Object</a> is equal to the current <b>Object</b>.</td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="CNPPID.Pop3.ExtractEmailAddress.html">ExtractEmailAddress</a></td><td width="50%"> Try to extract the e-mail address from the address given. <param name="strEmail"> strEmail is the line containing the email address. </param><returns> Returns the email address if one is found in strEmail. </returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassGetHashCodeTopic.htm">GetHashCode</a> (inherited from <b>Object</b>)</td><td width="50%">Serves as a hash function for a particular type, suitable for use in hashing algorithms and data structures like a hash table.</td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="CNPPID.Pop3.GetMessageByIndex.html">GetMessageByIndex</a></td><td width="50%"> Retrieve the message given by intIndex. <param name="intIndex"> intIndex is the index of the message to retrieve. </param><returns><p> Returns the message if intIndex is within the bounds of the array. </p><p> Returns Nothing if the index is out of bounds. </p></returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="CNPPID.Pop3.GetServerResponse.html">GetServerResponse</a></td><td width="50%"> Sends the message strMsg to the mail server and awaits a reply. Returns the reply from the server. <param name="strMsg"> strMsg is the message to give to the mail control. </param><returns> Returns the server's response. </returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassGetTypeTopic.htm">GetType</a> (inherited from <b>Object</b>)</td><td width="50%">Gets the <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemTypeClassTopic.htm">Type</a> of the current instance.</td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="CNPPID.Pop3.Quit.html">Quit</a></td><td width="50%"> This tells the mail control to disconnect from the mail server no matter what it's doing. Sets the state of the control to Disconnected. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="CNPPID.Pop3.SaveAttachmentsToDisk.html">SaveAttachmentsToDisk</a></td><td width="50%"> Find out if this message has any attachments in the body of the message. If so, we need to decode them and save them to the collection of attachments and remove the attachments from the body of the message itself. <param name="Msg"> Msg is the mail message to search. </param></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassToStringTopic.htm">ToString</a> (inherited from <b>Object</b>)</td><td width="50%">Returns a <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemStringClassTopic.htm">String</a> that represents the current <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassTopic.htm">Object</a>.</td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="CNPPID.Pop3.UUDecodeToFile.html">UUDecodeToFile</a></td><td width="50%"> NOTE: This was borrowed from another VB project written by a different programmer. Take a string of data encoded as uuencode and save it to disk. <param name="strUUCodeData"> strUUCodeData is the entire string to decode. </param><param name="strPath"> strPath is the full path to the file we are going to save the data to. </param></td></tr></table>
+      </div>
+      <h4 class="dtH4">Public Instance Events</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubevent.gif"></img><a href="CNPPID.Pop3.IncomingText.html">IncomingText</a></td><td width="50%"> This event is raised whenever the server comes back with a reply. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubevent.gif"></img><a href="CNPPID.Pop3.OutgoingText.html">OutgoingText</a></td><td width="50%"> This event is raised whenever something is sent to the server. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubevent.gif"></img><a href="CNPPID.Pop3.RaiseError.html">RaiseError</a></td><td width="50%"> This event is raised whenever an error occurs interally or with the mail server. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubevent.gif"></img><a href="CNPPID.Pop3.StatusChanged.html">StatusChanged</a></td><td width="50%"> This event is raised whenever the status changes, like when the class connects or disconnects. </td></tr></table>
+      </div>
+      <h4 class="dtH4">Protected Instance Methods</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassFinalizeTopic.htm">Finalize</a> (inherited from <b>Object</b>)</td><td width="50%">Allows an <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassTopic.htm">Object</a> to attempt to free resources and perform other cleanup operations before the <b>Object</b> is reclaimed by garbage collection.</td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassMemberwiseCloneTopic.htm">MemberwiseClone</a> (inherited from <b>Object</b>)</td><td width="50%">Creates a shallow copy of the current <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassTopic.htm">Object</a>.</td></tr></table>
+      </div>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="CNPPID.Pop3.html">Pop3 Class</a> | <a href="CNPPID.html">CNPPID Namespace</a></p>
+      <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e" viewastext="true" style="display: none;">
+        <param name="Keyword" value="Pop3 class">
+        </param>
+        <param name="Keyword" value="CNPPID.Pop3 class">
+        </param>
+        <param name="Keyword" value="Pop3 class, all members">
+        </param>
+      </object>
+      <hr />
+      <div id="footer">
+        <p>
+          <a href="mailto:wdcampbell@cnppid.com?subject=An%20NDoc%20Documented%20Class%20Library%20Documentation%20Feedback:%20Pop3%20Members&#xD;&#xA;						">Send comments on this topic.</a>
+        </p>
+        <p>
+        </p>
+        <p>Generated from assembly CNPPID [1.5.0.0]</p>
+      </div>
+    </div>
+  </body>
+</html>

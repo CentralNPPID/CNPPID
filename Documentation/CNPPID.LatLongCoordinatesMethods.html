@@ -1,0 +1,73 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>LatLongCoordinates Methods</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">An NDoc Documented Class Library</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">LatLongCoordinates Methods</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p>The methods of the <b>LatLongCoordinates</b> class are listed below. For a complete list of <b>LatLongCoordinates</b> class members, see the <a href="CNPPID.LatLongCoordinatesMembers.html">LatLongCoordinates Members</a> topic.</p>
+      <h4 class="dtH4">Public Static (Shared) Methods</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><img src="static.gif" /><a href="CNPPID.LatLongCoordinates.IsValidLatDegree.html">IsValidLatDegree</a></td><td width="50%"><param name="intLD"> intLD is the latitude degree value. </param><returns> Returns True if intLD is within the range of 0 - 90, inclusive, False if not. </returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><img src="static.gif" /><a href="CNPPID.LatLongCoordinates.IsValidLatMinute.html">IsValidLatMinute</a></td><td width="50%"><param name="intLM"> intLM is the latitude minute value. </param><returns> Returns True if intLM is within the range of 0 - 59, inclusive, False if not. </returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><img src="static.gif" /><a href="CNPPID.LatLongCoordinates.IsValidLatSecond.html">IsValidLatSecond</a></td><td width="50%"><param name="dblLS"> dblLS is the latitude second value. </param><returns> Returns True if dblLS is greater than or equal to 0 and less than 60, False if not. </returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><img src="static.gif" /><a href="CNPPID.LatLongCoordinates.IsValidLongDegree.html">IsValidLongDegree</a></td><td width="50%"><param name="intLD"> intLD is the longitude degree value. </param><returns> Returns True if intLD is within the range of 0 - 180, inclusive, False if not. </returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><img src="static.gif" /><a href="CNPPID.LatLongCoordinates.IsValidLongMinute.html">IsValidLongMinute</a></td><td width="50%"><param name="intLM"> intLM is the longitude degree value. </param><returns> Returns True if intLM is within the range of 0 - 59, inclusive, False if not. </returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><img src="static.gif" /><a href="CNPPID.LatLongCoordinates.IsValidLongSecond.html">IsValidLongSecond</a></td><td width="50%"><param name="dblLS"> dblLS is the longitude second value. </param><returns> Returns True if dblLS is greater than or equal to 0 and less than 60, False if not. </returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><img src="static.gif" /><a href="CNPPID.LatLongCoordinates.Parse.html">Parse</a></td><td width="50%"> Parse the input string by the delimiter of your choice (space, comma, tab, carriage return or slash) and return the values. <param name="strLatSort"> strLatSort is the string to parse. </param><returns> Returns the lat long coordinates if it parsed okay, Nothing if not. </returns></td></tr></table>
+      </div>
+      <h4 class="dtH4">Public Instance Methods</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="CNPPID.LatLongCoordinates.DecDegToDMS.html">DecDegToDMS</a></td><td width="50%"> Given the decimal degrees, return a string containing the degrees, minutes and seconds. It will be in the form DD-MM-SS.SSS. No bounds checking is done on the input. Formatting for the seconds can be handled by the calling function. The formulas for this is: deg = integer portion of DecDeg min = integer portion of (decimal portion of DecDeg * 60) sec = min * 60 <param name="DecDeg"> DecDeg is a double representing the decimal degrees. </param><returns><p> This returns the string formatted as DD-MM-SS.SSSS if no error occurred. </p><p> This returns a vbNullString if something is wrong. </p></returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassEqualsTopic.htm">Equals</a> (inherited from <b>Object</b>)</td><td width="50%">Determines whether the specified <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassTopic.htm">Object</a> is equal to the current <b>Object</b>.</td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassGetHashCodeTopic.htm">GetHashCode</a> (inherited from <b>Object</b>)</td><td width="50%">Serves as a hash function for a particular type, suitable for use in hashing algorithms and data structures like a hash table.</td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassGetTypeTopic.htm">GetType</a> (inherited from <b>Object</b>)</td><td width="50%">Gets the <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemTypeClassTopic.htm">Type</a> of the current instance.</td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="CNPPID.LatLongCoordinates.LatDecimal.html">LatDecimal</a></td><td width="50%"><returns> Returns the lat degree, lat minute, lat seconds as a decimal. </returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="CNPPID.LatLongCoordinates.LongDecimal.html">LongDecimal</a></td><td width="50%"><returns> Returns the long degree, long minute, long seconds as decimal. </returns></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassToStringTopic.htm">ToString</a> (inherited from <b>Object</b>)</td><td width="50%">Returns a <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemStringClassTopic.htm">String</a> that represents the current <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassTopic.htm">Object</a>.</td></tr></table>
+      </div>
+      <h4 class="dtH4">Protected Instance Methods</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassFinalizeTopic.htm">Finalize</a> (inherited from <b>Object</b>)</td><td width="50%">Allows an <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassTopic.htm">Object</a> to attempt to free resources and perform other cleanup operations before the <b>Object</b> is reclaimed by garbage collection.</td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassMemberwiseCloneTopic.htm">MemberwiseClone</a> (inherited from <b>Object</b>)</td><td width="50%">Creates a shallow copy of the current <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassTopic.htm">Object</a>.</td></tr></table>
+      </div>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="CNPPID.LatLongCoordinates.html">LatLongCoordinates Class</a> | <a href="CNPPID.html">CNPPID Namespace</a></p>
+      <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e" viewastext="true" style="display: none;">
+        <param name="Keyword" value="LatLongCoordinates class, methods">
+        </param>
+      </object>
+      <hr />
+      <div id="footer">
+        <p>
+          <a href="mailto:wdcampbell@cnppid.com?subject=An%20NDoc%20Documented%20Class%20Library%20Documentation%20Feedback:%20LatLongCoordinates Methods">Send comments on this topic.</a>
+        </p>
+        <p>
+        </p>
+        <p>Generated from assembly CNPPID [1.5.0.0]</p>
+      </div>
+    </div>
+  </body>
+</html>
